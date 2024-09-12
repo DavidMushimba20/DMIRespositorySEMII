@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1725608939 source:d:\school documents\first year\courses\semester ii\object oriented with cpp\projects\fibonacciapp\main.cpp
+	<iostream>
+	<iomanip>
+
