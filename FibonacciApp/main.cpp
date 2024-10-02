@@ -1,41 +1,32 @@
 #include <iostream>
 
-//#include <iomanip>
-
 using namespace std;
 
+void fibonacciSeq(int n) {
+    int a = 0, b = 1, next;
+    cout << "Fibonacci Series: " << a << ", " << b;
+    for (int i = 2; i < n; i++) {
+        next = a + b;
+        cout << ", " << next;
+        a = b;
+        b = next;
+    }
+    cout << endl;
+}
+//factori
 int PrintFib() {
-
-    int rows, count = 0, count1 = 0, k = 0;
-
-    cout << "Enter number of rows: ";
-    cin >> rows;
-
-    for(int i = 1; i <= rows; ++i) {
-        for(int space = 1; space <= rows-i; ++space) {
-            cout << "  ";
-            ++count;
-        }
-
-        while(k != 2*i-1) {
-            if (count <= rows-1) {
-                cout << i+k << " ";
-                ++count;
-            }
-            else {
-                ++count1;
-                cout << i+k-2*count1 << " ";
-            }
-            ++k;
-        }
-        count1 = count = k = 0;
-
-        cout << endl;
+    int n;
+    cout << "Enter the number of terms: ";
+    cin >> n;
+    if (n <= 0) {
+        cout << "Please enter a positive number." << endl;
+    } else if (n == 1) {
+        cout << "Fibonacci Series: 0" << endl;
+    } else {
+        fibonacciSeq(n);
     }
     return 0;
 }
-
-
 
 int main()
 {
