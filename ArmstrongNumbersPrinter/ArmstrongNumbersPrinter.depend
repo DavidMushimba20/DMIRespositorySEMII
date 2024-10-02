@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1726537396 source:d:\school documents\first year\semester ii\courses\object oriented with cpp\projects\armstrongnumbersprinter\main.cpp
+	<iostream>
+	<math.h>
+
